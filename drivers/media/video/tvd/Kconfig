@@ -1,0 +1,8 @@
+
+config TVD
+	tristate "parker-TV Decoder"
+	default m
+	depends on VIDEO_DEV && VIDEO_V4L2
+	select VIDEOBUF_DMA_CONTIG
+	help
+	  This is the driver of TV decoder.
